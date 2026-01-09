@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AlgoLib - Optimized code snippets for competitive programming in Java and C++. Quick access to algorithms for sorting, searching, graphs, and more.">
+    <meta name="keywords" content="algorithms, competitive programming, Java, C++, data structures">
+    <meta name="author" content="Prateek Singh, Shivansh Sahu">
+    <meta name="theme-color" content="#92aed6">
+    <title>AlgoLib - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video-home">
+        <source src="https://ik.imagekit.io/g7e4hyclo/proxy2.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand"><span class="nav-logo">&lt;/&gt;</span>AlgoLib</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="developer.html" class="nav-link">Developer</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <div class="hero-wrapper">
+        <div class="hero-header">
+        </div>
+        <h1 class="hero-title">AlgoLib</h1>
+        <p class="hero-desc">Optimized Code Snippets for Competitive Programming</p>
+
+        <div class="search-wrapper-home">
+            <input type="text" class="nav-input-home" id="searchInput" 
+                placeholder="Search (e.g. sorting)..." 
+                oninput="showSuggestions(this)" 
+                onkeypress="handleEnter(event)"
+                aria-label="Search algorithms">
+            
+            <button class="search-btn" onclick="executeSearch()" aria-label="Execute search">Search</button>
+            
+            <p id="error-msg" class="hidden error" style="color: red; margin-top: 10px; font-weight: bold;">⚠️ Algorithm not found!</p>
+            
+            <div class="suggestion-box hidden" role="listbox"></div>
+        </div>
+
+        <div class="quick-access-section">
+            <p class="qa-label">Quick Explore:</p>
+            <div class="category-filters" id="categoryFilters"></div>
+            <div class="tags-container" id="tagsContainer"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AlgoLib Made with ❤️🎵 -All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
